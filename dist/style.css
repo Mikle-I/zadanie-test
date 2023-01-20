@@ -1,0 +1,255 @@
+body {
+  background: url(../img/Pattern.png);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.ten {
+  position: absolute;
+  width: 100%;
+  background-color: aqua;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  height: 200px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+.question {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 32px;
+  z-index: 6;
+}
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  z-index: 6;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-top: -15px;
+}
+.cart__one {
+  border: 4px solid #1698d9;
+  border-radius: 11px;
+  width: 320px;
+  height: 460px;
+  background-color: #f2f2f2;
+  padding-left: 45px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  -webkit-clip-path: polygon(9% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 7%);
+  clip-path: polygon(9% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 7%);
+}
+
+.cart__one h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+.cart__one--p {
+  font-size: 16;
+  color: #666666;
+}
+.cart__one--p3 {
+  font-size: 16;
+  color: #666666;
+  margin-bottom: -3px;
+}
+.cart__one--vkus {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.cart__one--circle {
+  width: 80px;
+  height: 80px;
+  background-color: #1698d9;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 42px;
+  position: relative;
+  left: 230px;
+  top: 170px;
+  z-index: 5;
+  color: #f2f2f2;
+}
+.cart__one--circleP {
+  font-size: 21px;
+}
+.wrapper {
+  width: 340px;
+  height: 260px;
+
+  border-radius: 8px;
+  position: relative;
+  top: -83px;
+  left: -46px;
+  z-index: 0;
+}
+.exmpl {
+  overflow: hidden;
+}
+.exmpl img {
+  width: auto;
+  height: 135%;
+  margin-left: -25px;
+}
+
+.cart__line {
+  border-bottom: solid 5px #1698d9;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 200px;
+  margin-left: -120px;
+}
+.cart__footer,
+.cart__footer--active {
+  position: relative;
+  top: 18px;
+  margin-left: 55px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.ten--down {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: aqua;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  height: 200px;
+  margin: 0 auto;
+  z-index: 0;
+}
+@media (max-width: 1200px) {
+  .cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    z-index: 6;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-top: -15px;
+    width: 800px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0% auto;
+    justify-content: space-around;
+  }
+  .cart__one {
+    margin-top: 40px;
+  }
+  .cart__tab-margin {
+    margin-right: 80px;
+    margin-top: -40px;
+    margin-left: 70px;
+  }
+  .cart__footer {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .cart {
+    width: 600px;
+  }
+}
+
+.selected--circle {
+  background: #d91667;
+}
+.selected--border {
+  border: 4px solid #d91667;
+}
+
+.selected--line {
+  border-bottom: solid 5px #d91667;
+}
+
+.sales {
+  cursor: pointer;
+  color: #107cb2;
+}
+.visible {
+  display: none;
+}
+.disabled--border {
+  border: 4px solid #b3b3b3;
+  color: #d4d4d4;
+}
+.disabled--line {
+  border-bottom: solid 5px #b3b3b3;
+}
+.disabled--circkle {
+  background: #b3b3b3;
+}
+.cart__footer--disable {
+  font-size: 13px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ffff66;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.color--disabled {
+  color: #d4d4d4;
+}
+.foto--disabled {
+  opacity: 0.3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hover--border {
+  border: 4px solid #2ea8e6;
+}
+.hover--line {
+  border-bottom: solid 5px #2ea8e6;
+}
+.hover--circkle {
+  background: #2ea8e6;
+}
